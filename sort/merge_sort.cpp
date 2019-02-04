@@ -10,6 +10,12 @@ void ShowValues(std::vector<int> values, int leftIndex, int rightIndex)
     std::cout << std::endl;
 }
 
+/*
+マージソート(O(nlogn))
+  -> 再帰がO(logn)回、それぞれのソートがO(n)かかる
+配列を半分に分けて、それぞれをソートしておいて、その 2 つをマージすることを繰り返す。
+https://qiita.com/drken/items/44c60118ab3703f7727f#5-%E3%83%9E%E3%83%BC%E3%82%B8%E3%82%BD%E3%83%BC%E3%83%88-on-log-n
+*/
 void MergeSort(std::vector<int> &values, int leftIndex, int rightIndex)
 {
     std::cout << "(before)" << std::endl;
