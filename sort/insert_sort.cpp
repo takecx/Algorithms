@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 int main()
 {
     // g++ -std=c++11 -o insert_sort.out insert_sort.cpp
@@ -16,10 +18,10 @@ int main()
     // After Step 4: 1 2 3 4 5
     // ```
 
-    std::vector<int> values{4, 1, 3, 7, 5, 2};
+    vector<int> values{4, 1, 3, 7, 5, 2};
     for (int i = 0; i < values.size(); i++)
-        std::cout << values[i] << " ";
-    std::cout << std::endl;
+        cout << values[i] << " ";
+    cout << endl;
 
     for (int i = 1; i < values.size(); i++)
     {
@@ -38,6 +40,6 @@ int main()
         values[j] = value;
     }
     for (int i = 0; i < values.size(); i++)
-        std::cout << values[i] << " ";
-    std::cout << std::endl;
+        cout << values[i] << " ";
+    cout << endl;
 }
